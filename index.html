@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<style>
+*{ margin:0;
+padding:0; }
+
+.navbar{
+width:96%;
+height:10vh;
+background-color: black;
+position: relative;
+padding:0vh 2vw;
+}
+.navbar .kirti{
+font-size:2rem;
+line-height:10vh;
+position: absolute;
+color: white;
+}
+.navbar .spaan1{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:10vh;
+right:35vw;
+}
+.navbar .spaan2{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:10vh;
+right:30vw;
+}
+.navbar .spaan3{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:10vh;
+right:23vw;
+}
+.navbar .spaan4{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:10vh;
+right:15vw;
+}
+
+.main1{
+width:95vw;
+height:35vh;
+background-image: url(1.png);
+background-size:cover;
+color:white;
+padding:27vh 2vw;
+}
+.main1 h3{ 
+font-size:2rem;
+}
+.main1 h1{
+font-size:4rem;
+}
+.main1 h5{
+font-size:1.1rem;
+}
+.main1 .read{
+width:10vw;
+height:6vh;
+background-color:yellow;
+font-size:1rem;
+}
+
+.main2{
+border:0px solid black;
+width:99vw;
+height:70vh;
+position:relative;
+}
+.featured{
+border:0px solid black;
+width:47vw;
+height:90%;
+margin:3vh;
+float:left;
+}
+.all{
+border:0px solid black;
+width:47vw;
+height:90%;
+margin:3vh;
+position:absolute;
+right:0;
+}
+.featured h3{
+font-size:1.8rem;
+}
+.featured img{
+margin:3vh;
+width:90%;
+height:40%;
+border:0px solid black;
+}
+.featured h5{
+margin:0vh 3vh;
+font-size:1rem;
+}
+.featured h2{
+margin:0vh 3vh;
+font-size:1.5rem;
+}
+.featured p{
+margin:0vh 3vh;
+font-size:1rem;
+}
+.featured .read{
+width:10vw;
+height:6vh;
+background-color:yellow;
+margin:0vh 3vh;
+font-size:1rem;
+}
+
+.all h3{
+font-size:1.8rem;
+}
+.all .inbox{
+border:0px solid black;
+margin:1.5vh 3vh;
+padding:1vh 3vh;
+width:88%;
+height:18%;
+}
+
+.main3{
+border:0px solid black;
+width:99vw;
+height:50vh;
+margin:3vh 0vw;
+position:relative;
+}
+.about{
+border:0px solid black;
+width:42vw;
+height:70%;
+margin:3vh;
+padding:5vh;
+float:left;
+}
+.mission{
+border:0px solid black;
+width:42vw;
+height:70%;
+margin:3vh;
+padding:5vh;
+position:absolute;
+right:0;
+}
+
+.about h4{
+font-size:1.2rem;
+}
+.about h2{
+font-size:2.5rem;
+}
+.about p{
+font-size: 1rem;
+}
+.about a{
+text-decoration:none;
+font-size:1.2rem;
+}
+
+.mission h4{
+font-size:1.2rem;
+}
+.mission h2{
+font-size:2.5rem;
+}
+.mission p{
+font-size: 1rem;
+}
+
+.category{
+width:99vw;
+height:40vh;
+border:0px solid black;
+}
+.category h3{
+text-align:center;
+font-size:2rem;
+}
+.category .box{
+width: 18.5vw;
+height:50%;
+border:0px solid black;
+margin:1vh 1vw;
+padding:3vw 2vw;
+float:left;
+}
+.category .box img{
+width:2vw;
+height:2vw;
+}
+.category .box h4{
+font-size:2.5rem;
+}
+.category .box p{
+font-size:1.2rem;
+}
+
+.main4{
+width:99vw;
+height:70vh;
+border:0px solid black;
+position:relative;
+}
+.main4 .leftpic{
+border:0px solid black;
+width:70%;
+height:100%;
+background-image:url(2.png);
+background-size:cover;
+float:left;
+}
+.main4 .rightbox{
+width:40%;
+height:65%;
+position:absolute;
+right:0;
+bottom:0;
+background-color:white;
+padding:4.5vw;
+}
+.main4 .rightbox h4{
+font-size:1.6rem;
+}
+.main4 .rightbox h2{
+font-size:3rem;
+}
+.main4 .rightbox p{
+font-size:1rem;
+}
+.main4 .rightbox .read{
+width:15vw;
+height:6vh;
+background-color:yellow;
+font-size:1rem;
+}
+
+.authors{
+width:99vw;
+height:63vh;
+border:0px solid black;
+margin:5vh 0vh;
+}
+.authors h3{
+text-align:center;
+font-size:2rem;
+}
+.authors .box2{
+width: 17vw;
+height:30vh;
+border:0px solid black;
+margin:1vh 1.7vw;
+padding:3vw 2vw;
+float:left;
+text-align:center;
+}
+.authors .box2 img{
+width:10vw;
+height:10vw;
+border:0px solid black;
+border-radius:50%;
+}
+.authors .box2 h3{
+font-size:2.5rem;
+}
+.authors .box2 p{
+font-size:1.2rem;
+}
+.authors .companies{
+width:96%;
+height:10vh;
+border:0px solid black;
+margin-top:45vh;
+padding:1vh 2vw;
+}
+.authors .companies img{
+width:60vw;
+height:10vh;
+border:0px solid black;
+margin-left:12vw;
+}
+
+.peoplesay{
+width:94vw;
+height:50vh;
+border:0px solid black;
+background-color: #FBF6EA;
+margin:5vh 3vw;
+position:relative;
+}
+.peoplesay .left{
+width:35%;
+height:65%;
+border:0px solid black;
+float:left;
+padding:4vw;
+}
+.peoplesay .left h5{
+font-size:1.5rem;
+}
+.peoplesay .left h2{
+font-size:3rem;
+}
+.peoplesay .left p{
+font-size:1.1rem;
+}
+.peoplesay .right{
+width:48.5%;
+height:65%;
+border:0px solid black;
+padding:4vw;
+position:absolute;
+right:0;
+}
+.peoplesay .right img{
+width:100%;
+height:55%;
+}
+
+
+.footer{
+padding:2vw 4vw;
+width:92%;
+height:20vh;
+border:0px solid black;
+position:relative;
+background-color:rgba(0,0,0,0.7);
+}
+.footer .kirti{
+font-size:2rem;
+line-height:8vh;
+position: absolute;
+color: white;
+}
+.footer .spaan1{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:8vh;
+right:35vw;
+}
+.footer .spaan2{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:8vh;
+right:30vw;
+}
+.footer .spaan3{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:8vh;
+right:23vw;
+}
+.footer .spaan4{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:8vh;
+right:15vw;
+}
+.footer .spaan5{
+color:white;
+font-size:1.2rem;
+position:absolute;
+line-height:8vh;
+right:6vw;
+}
+.footer .spaan6{
+color:white;
+font-size:1rem;
+position:absolute;
+bottom:3vh;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<span class="kirti">Kirti</span>
+<span class="spaan1">Home</span>
+<span class="spaan2">Blogs</span>
+<span class="spaan3">About Us</span>
+<span class="spaan4">Contact Us</span>
+</div>
+
+<div class="main1">
+<h3>POSTED ON STARTUP</h3>
+<br>
+<h1>Step-by-step guide to choosing<br> great font pairs</h1>
+<br>
+<h5>By James West | May 23,2022<br></h5>
+<br><br>
+<button class="read">Read More ></button>
+</div>
+
+<div class="main2">
+<div class="featured">
+<h3>Featured Post</h3>
+<img src="3.png">
+<h5>By John Doe | May 23, 2022</h5>
+<br>
+<h2>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</h2>
+<p>Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
+<br>
+<button class="read">Read More ></button>
+</div>
+<div class="all">
+<h3>All Posts</h3>
+<div class="inbox">
+<h5>By John Deo | Aug 23,20221</h5>
+<h3>8 Figma design systems that you can download for free today.</h3>
+</div>
+<div class="inbox">
+<h5>By John Deo | Aug 23,20221</h5>
+<h3>8 Figma design systems that you can download for free today.</h3>
+</div>
+<div class="inbox">
+<h5>By John Deo | Aug 23,20221</h5>
+<h3>8 Figma design systems that you can download for free today.</h3>
+</div>
+<div class="inbox">
+<h5>By John Deo | Aug 23,20221</h5>
+<h3>8 Figma design systems that you can download for free today.</h3>
+</div>
+</div>
+</div>
+
+<div class="main3">
+<div class="about">
+<h4>ABOUT US</h4>
+<br>
+<h2>We are a community of content writers who share their learnings</h2>
+<p><br>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+<br><br>
+<a href="#">Read More ></a>
+</div>
+<div class="mission">
+<h4>OUR MISSION</h4>
+<br>
+<h2>Creating valuable content for creatives all around the world</h2>
+<p><br>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+</div>
+</div>
+
+<div class="category">
+<h3>Choose A Category</h3>
+<div class="box">
+<img src="icon4.png">
+<h4>Business</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+<div class="box">
+<img src="icon4.png">
+<h4>Startup</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+<div class="box">
+<img src="icon4.png">
+<h4>Economy</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+<div class="box">
+<img src="icon4.png">
+<h4>Technology</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+</div>
+
+<div class="main4">
+<div class="leftpic"></div>
+<div class="rightbox">
+<h4>WHY WE STARTED</h4>
+<h2>It started out as a simple idea and evolved into our passion</h2>
+<p><br>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<br><br></p>
+<button class="read">Discover our story ></button>
+</div>
+</div>
+
+<div class="authors">
+<h3> List of Authors </h3>
+<div class="box2">
+<img src="person1.png">
+<h2>Floyd Miles</h2>
+<p>Content Writer @Company</p>
+</div>
+<div class="box2">
+<img src="person2.png">
+<h2>Floyd Miles</h2>
+<p>Content Writer @Company</p>
+</div>
+<div class="box2">
+<img src="person3.png">
+<h2>Floyd Miles</h2>
+<p>Content Writer @Company</p>
+</div>
+<div class="box2">
+<img src="person4.png">
+<h2>Floyd Miles</h2>
+<p>Content Writer @Company</p>
+</div>
+<div class="companies">
+<img src="4.png">
+</div>
+</div>
+
+<div class="peoplesay">
+<div class="left">
+<h5>TESTIMONIALS</h5><br>
+<h2>What people say about our blog</h2>
+<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+</div>
+<div class="right">
+<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+<br><br><br>
+<img src="5.png">
+</div>
+</div>
+
+<div class="join">
+</div>
+
+<div class="footer">
+<span class="kirti">Kirti</span>
+<span class="spaan1">Home</span>
+<span class="spaan2">Blogs</span>
+<span class="spaan3">About Us</span>
+<span class="spaan4">Contact Us</span>
+<span class="spaan5">Privacy Policy</span>
+<span class="spaan6">Finstreet 118 2561 Fintown<br>Hello@finsweet.com 020 7993 2905</span>
+</div>
+</body>
+</html>
